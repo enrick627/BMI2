@@ -35,6 +35,7 @@
             this.button_toonBMI = new System.Windows.Forms.Button();
             this.label_BMI = new System.Windows.Forms.Label();
             this.textBox_BMI = new System.Windows.Forms.TextBox();
+            this.button_sluiten = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gewicht_label
@@ -62,6 +63,7 @@
             this.gewicht_textbox.ShortcutsEnabled = false;
             this.gewicht_textbox.Size = new System.Drawing.Size(100, 22);
             this.gewicht_textbox.TabIndex = 2;
+            this.gewicht_textbox.TextChanged += new System.EventHandler(this.gewicht_textbox_TextChanged);
             // 
             // lengte_textbox
             // 
@@ -69,6 +71,7 @@
             this.lengte_textbox.Name = "lengte_textbox";
             this.lengte_textbox.Size = new System.Drawing.Size(100, 22);
             this.lengte_textbox.TabIndex = 3;
+            this.lengte_textbox.TextChanged += new System.EventHandler(this.lengte_textbox_TextChanged);
             // 
             // button_toonBMI
             // 
@@ -78,6 +81,7 @@
             this.button_toonBMI.TabIndex = 4;
             this.button_toonBMI.Text = "TOON BMI";
             this.button_toonBMI.UseVisualStyleBackColor = true;
+            this.button_toonBMI.Click += new System.EventHandler(this.button_toonBMI_Click);
             // 
             // label_BMI
             // 
@@ -94,12 +98,24 @@
             this.textBox_BMI.Name = "textBox_BMI";
             this.textBox_BMI.Size = new System.Drawing.Size(100, 22);
             this.textBox_BMI.TabIndex = 6;
+            this.textBox_BMI.TextChanged += new System.EventHandler(this.textBox_BMI_TextChanged);
+            // 
+            // button_sluiten
+            // 
+            this.button_sluiten.Location = new System.Drawing.Point(12, 230);
+            this.button_sluiten.Name = "button_sluiten";
+            this.button_sluiten.Size = new System.Drawing.Size(75, 23);
+            this.button_sluiten.TabIndex = 7;
+            this.button_sluiten.Text = "SLUIT";
+            this.button_sluiten.UseVisualStyleBackColor = true;
+            this.button_sluiten.Click += new System.EventHandler(this.button_sluiten_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(290, 265);
+            this.Controls.Add(this.button_sluiten);
             this.Controls.Add(this.textBox_BMI);
             this.Controls.Add(this.label_BMI);
             this.Controls.Add(this.button_toonBMI);
@@ -123,6 +139,7 @@
         private System.Windows.Forms.Button button_toonBMI;
         private System.Windows.Forms.Label label_BMI;
         private System.Windows.Forms.TextBox textBox_BMI;
+        private System.Windows.Forms.Button button_sluiten;
     }
 }
 
