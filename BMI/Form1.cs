@@ -25,6 +25,7 @@ namespace BMI
 
         private void button_toonBMI_Click(object sender, EventArgs e)
         {
+            
             float Gewicht, lengte, som, lengteSom;
             Gewicht = float.Parse( gewicht_textbox.Text);
             lengte = float.Parse(lengte_textbox.Text);
